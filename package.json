@@ -1,0 +1,97 @@
+{
+  "name": "dsh-model-quota-usage",
+  "version": "1.1.0",
+  "description": "DeepSeek Harness 模型额度与 Token 统计面板：只显示 DeepSeek 账户余额，并按日汇总所有 Provider 与模型的 Token 用量。",
+  "type": "module",
+  "author": "Hades03",
+  "scripts": {
+    "check": "node scripts/check-release.mjs",
+    "test": "node --test test/*.test.mjs",
+    "prepack": "npm run check && npm test"
+  },
+  "main": "lib/index.js",
+  "exports": {
+    ".": {
+      "default": "./lib/index.js"
+    },
+    "./client": {
+      "default": "./lib/client.js"
+    },
+    "./typert": {
+      "default": "./lib/typert.host.js"
+    },
+    "./package.json": "./package.json"
+  },
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    },
+    "client": {
+      "platform": "web"
+    }
+  },
+  "dshhub": {
+    "schemaVersion": 1,
+    "displayName": "模型额度与 Token 统计",
+    "summary": "在 DeepSeek Harness 右下角显示 DeepSeek 余额、今日总 Token，并按 Provider/模型列出 Token 消耗。",
+    "categories": ["Token", "Web UI", "观测"],
+    "surfaces": ["host", "web"],
+    "capabilities": {
+      "provides": ["service:model-quota-usage"]
+    },
+    "compatibility": {
+      "dsh": ">=0.1.1-rc.2",
+      "node": ">=20"
+    },
+    "permissions": {
+      "network": ["https://api.deepseek.com"]
+    }
+  },
+  "files": [
+    "lib",
+    "cordis.patch.yml",
+    "docs/provider-pricing.json",
+    "NOTICE",
+    "CHANGELOG.md",
+    "SECURITY.md"
+  ],
+  "dependencies": {
+    "@deepseek-ai/dsh-credentials": "^0.1.0-rc.6",
+    "@deepseek-ai/dsh-home-paths": "^0.1.0-rc.6",
+    "zod": "^4.4.3"
+  },
+  "engines": {
+    "node": ">=20"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Hades03/dsh-model-quota-usage.git"
+  },
+  "homepage": "https://github.com/Hades03/dsh-model-quota-usage#readme",
+  "bugs": {
+    "url": "https://github.com/Hades03/dsh-model-quota-usage/issues"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "keywords": [
+    "deepseek",
+    "deepseek-harness",
+    "dsh",
+    "dsh-plugin",
+    "client-plugin",
+    "token",
+    "model-usage",
+    "quota",
+    "cost",
+    "usage",
+    "billing",
+    "budget",
+    "i18n",
+    "bilingual",
+    "zh",
+    "en",
+    "language"
+  ],
+  "license": "MIT"
+}

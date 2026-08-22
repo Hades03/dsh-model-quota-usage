@@ -1,0 +1,10 @@
+dsh-model-quota-usage
+
+This project contains software derived from dsh-cost-meter 1.5.38:
+https://github.com/Han-1413141/dsh-cost-meter
+
+The upstream project and this derivative are distributed under the MIT
+License. The upstream copyright and license notice are preserved in LICENSE.
+
+The dsh-model-quota-usage modifications provide a focused DeepSeek Harness
+overlay for DeepSeek account balance and cross-provider/model token usage.
