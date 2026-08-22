@@ -2,6 +2,8 @@
 
 DeepSeek Harness Web 插件：在一个可拖动、可折叠的悬浮面板中显示 DeepSeek 官方账户余额，以及今日全部 Provider/模型的 Token 用量。
 
+![模型额度与 Token 统计悬浮面板](docs/showcase.png)
+
 ## 功能
 
 - 只显示 DeepSeek 开放平台账户余额；
