@@ -40,7 +40,7 @@ dsh plugin --profile web add "link:<本仓库绝对路径>"
 
 ## 兼容性
 
-- DeepSeek Harness `>= 0.1.1-rc.2`
+- DeepSeek Harness `>= 0.2.0-rc.1`
 - Node.js `>= 20`
 - Web profile / DeepSeek Harness Desktop
 
@@ -68,7 +68,7 @@ npm pack --dry-run
 
 ## 版本
 
-当前版本：`1.1.0`。变更记录见 [CHANGELOG.md](CHANGELOG.md)。
+当前版本：`1.1.1`。变更记录见 [CHANGELOG.md](CHANGELOG.md)。
 
 ## 上游与许可证
 

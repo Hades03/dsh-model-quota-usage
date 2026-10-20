@@ -1,5 +1,10 @@
 # Changelog
 
+## 1.1.1
+
+- 适配 dsh 0.2.x：Typert strict codec 由 `{ schema }` 改为 `create()` 工厂。0.2 的 Typert 注册表要求 `codec.create` 是函数，缺了会直接抛 `typert: ... strict codec has no create() factory`；宿主侧 10 处、浏览器侧 17 处编解码器同步调整。
+- 兼容性下限提升为 dsh `>=0.2.0-rc.1`；0.1.x 用户请继续使用 1.1.0。
+
 ## 1.1.0
 
 - 添加 DeepSeek 余额、今日总 Token 与 Provider/模型明细悬浮面板。

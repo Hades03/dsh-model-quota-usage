@@ -1,6 +1,6 @@
 {
   "name": "dsh-model-quota-usage",
-  "version": "1.1.0",
+  "version": "1.1.1",
   "description": "DeepSeek Harness 模型额度与 Token 统计面板：只显示 DeepSeek 账户余额，并按日汇总所有 Provider 与模型的 Token 用量。",
   "type": "module",
   "author": "Hades03",
@@ -40,7 +40,7 @@
       "provides": ["service:model-quota-usage"]
     },
     "compatibility": {
-      "dsh": ">=0.1.1-rc.2",
+      "dsh": ">=0.2.0-rc.1",
       "node": ">=20"
     },
     "permissions": {
